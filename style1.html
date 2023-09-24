@@ -4,26 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initail-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font: 100% Lucida Sans, Verdana;
+            margin: 20px;
+            line-height: 26px;
+        }
+        .menulist {
+            margin: 0;
+            padding: 0;
+        }
+        #menubar {
+            width: 200px;
+            float: left;
+            height: 400px;
+            margin: 0;
+            padding: 0;
+        }
+        .menuitem:first-child {
+            background-color: #04AA6D;
+            color: white;
+            font-weight: bold;
+        }
+        .menuitem {
+            border-radius: 4px;
+            margin: 4px;
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            list-style-type: none;
+            padding: 2px;
+            cursor: pointer;
+            
+        }
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        #footer{
+            background-color:rgb(224, 229, 231) ;
+            text-align: center;
+            font-size: 70%;
+            line-height: 14px;
+            padding: 10px;
+            border: solid #cecece;
+        }
+        #top{
+            background-color: #04AA6D;
+            color: aliceblue;
+            padding: 10px;
+        }
+        #top, #sidebar, #bottom, .menuitem {
+            border-radius: 4px;
+            margin: 4px;
+        }
+        #main, #sidebar{
+            max-width: 800px
+        }
+        #menubar{
+            max-width: 800px;
+            margin-right: 0;
+            margin: 0;
+            float: left;
+        }
+        #sidebar{
+            background-color: #32a4e7;
+            color: aliceblue;
+            padding: 10px;
+            width: 180px;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+        .center {
+            position: relative;
+            overflow: auto;
+            
+        }
+        #main {
+            padding: 10px;
+            margin: 0 210px;
+        }
+        #top h1, #top p, #menulist {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <div  style="background-color:#04AA6D;"> <!--top-->
-            <h1 style="color:aliceblue; ">Welcome to 22000257's  Homepage</h1>
-            <p style="color: aliceblue;">Use the menu to select different Stylesheets</p>
+    <script>
+        function hello(){
+            alert('안녕하세요');
+        }
+    </script>
+    
+    <div class="container wrapper">
+        <div id="top"> <!--top-->
+            <h1 >Welcome to 22000257's  Homepage</h1>
+            <p >Use the menu to select different Stylesheets</p>
         </div><br>
-
-        <div><!--center-->
-            <div>
-                <ul><!--menubar-->>
-                    <li>Stylesheet1</li>
-                    <li>Stylesheet2</li>
-                    <li>Stylesheet3</li>
-                    <li>Stylesheet4</li>
-                    <li>No Stylesheet</li>
+        
+        <div class="center"><!--center-->
+            <div id="menubar"><!--menubar-->
+                <ul id="menulist"><!--menulist-->
+                    <li class="menuitem" onclick="hello()">Stylesheet1</li>
+                    <li class="menuitem" onclick="hello()">Stylesheet2</li>
+                    <li class="menuitem" onclick="hello()">Stylesheet3</li>
+                    <li class="menuitem" onclick="hello()">Stylesheet4</li>
+                    <li class="menuitem" onclick="hello()">No Stylesheet</li>
                 </ul>
             </div>
-            <div><!--main-->>
-                <h1>Top</h1>
+            <div id="main"><!--main-->
+                <h1>Same Page Different Stylesheets</h1>
                 <p>"This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:"
                 <br>
                 <a href="">Stylesheet1</a>
@@ -41,15 +138,14 @@
                 .
                 </p>
             </div>
-            <div><!--sidebar-->>
+            <div id="sidebar"><!--sidebar-->
                 <h3>Side-Bar</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<p>
             </div>
         </div><br>
     </div>
 </body>
-<div id="footer" , style="background-color: gray;"><!--bottom-->
+<div id="footer"><!--bottom-->
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
 </div>
 </html>
-
