@@ -14,6 +14,20 @@
 </head>
 
 <body>
+    <script>
+        function style34(){
+            alert('Not implemented yet');
+        }
+        function style1(){
+            location.href='./style1.html'
+        }
+        function style2(){
+            location.href='./style2.html'
+        }
+        function nostyle(){
+            location.href='./nostyle.html'
+        }
+    </script>
     <div class="container wrapper">
         <div id="top"> <!--top-->
             <h1 >Welcome to 22000257's  Homepage</h1>
@@ -23,20 +37,20 @@
         <div class="center"><!--center-->
             <div id="menubar"><!--menubar-->
                 <ul id="menulist"><!--menulist-->
-                    <li class="menuitem" onclick="hello()">Stylesheet 1</li>
-                    <li class="menuitem" onclick="hello()">Stylesheet 2</li>
-                    <li class="menuitem" onclick="hello()">Stylesheet 3</li>
-                    <li class="menuitem" onclick="hello()">Stylesheet 4</li>
-                    <li class="menuitem" onclick="hello()">No Stylesheet</li>
+                    <li class="menuitem" onclick="style1()">Stylesheet 1</li>
+                    <li class="menuitem" onclick="style2()">Stylesheet 2</li>
+                    <li class="menuitem" onclick="style34()">Stylesheet 3</li>
+                    <li class="menuitem" onclick="style34()">Stylesheet 4</li>
+                    <li class="menuitem" onclick="nostyle()">No Stylesheet</li>
                 </ul>
             </div>
             <div id="main"><!--main-->
                 <h1>Same Page Different Stylesheets</h1>
                 <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
                 <br>
-                <a href="">Stylesheet1</a>
+                <a href="style1.html">Stylesheet1</a>
                 , 
-                <a href="">Stylesheet2</a>
+                <a href="style2.html">Stylesheet2</a>
                 ,
                 <a href="">Stylesheet3</a>
                 , 
@@ -45,7 +59,7 @@
                 <h2>No Styles</h2>
                 <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
                 <br>
-                <a href="">No Stylesheet</a>
+                <a href="nostyle.html">No Stylesheet</a>
                 .
                 </p>
             </div>
