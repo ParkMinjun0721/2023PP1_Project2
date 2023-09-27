@@ -5,25 +5,32 @@
 <h2>HTML Forms</h2>
 
 <form action="/action_page.php">
-<label for="foodselect">What do you like?</label><br>
+  <fieldset>
+  <legend>What do you like?</legend>
   <select name="food">
       <option value="1">짜장면 </option>
         <option value="2">짬뽕</option>
         <option value="3">탕수육</option>
         <option value="4">다 싫어!</option>
-  </select> <br><br>
-  
+  </select>
+  </fieldset>
+  <br>
+  <fieldset>
   <label for="genderradio">Gender:</label><br>
   <input type="radio" id="fname" name="fname" value="John" checked>Male<br>
   <input type="radio" id="fname" name="fname" value="John">Female<br>
   <input type="radio" id="fname" name="fname" value="John">Alien<br><br>
-  
+  </fieldset>
+  <br>
+  <fieldset>
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="Minjun"><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" value="Park"><br><br>
-  
-  <label for="vehiclecheckbox">Do you have vehicle?</label><br>
+  </fieldset>
+  <br>
+  <fieldset>
+  <legend>Do you have vehicle?</legend>
   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
   <label for="vehicle1"> I have a bike</label><br>
   <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
@@ -32,14 +39,19 @@
   <label for="vehicle3"> I have a horse</label><br>
   <input type="checkbox" id="vehicle4" name="vehicle4" value="None" checked>
   <label for="vehicle4"> None</label><br><br>
-  
-  <p>Practice Textarea :></p>
+  </fieldset>
+  <br>
+  <fieldset>
+  <legend>Practice Textarea :></legend>
   <textarea name="message" rows="10" cols="30">My name is Minjun Park. And my student number is 22000257.
-  </textarea><br><br>
-  
-  <label for="start"> When is your birthday?:</label><br>
-<input type="date" id="birth" name="birth" value="2001-07-21" min="1900-01-01" 	max="2023-12-31" /><br><br>
-  
+  </textarea>
+  </fieldset>
+  <br>
+  <fieldset>
+  <legend>When is your birthday?</legend>
+  <input type="date" id="birth" name="birth" value="2001-07-21" min="1900-01-01" 	max="2023-12-31" />
+  </fieldset>
+  <br>
   <fieldset>
     <legend>Please check again before submitting!</legend>
     <p style="margin: 0;">Have a good day!</p><br>
