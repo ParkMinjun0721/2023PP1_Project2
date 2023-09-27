@@ -6,13 +6,82 @@
     <title>Document</title>
     <style>
         #center {
+            align-items: center;
+            display:flex;
+        }
+        html, body{
+            margin: 0;
+            height: 100%;
+            background-color:#f8f9fa;
+        }
+        .idform{
             text-align: center;
+            left: 0;
+            right: 0;
+            width: 100%;
+            max-width: 330px;
+            padding: 15px;
+            margin: auto;   
+            
+        }
+        .email, .password, .sign{
+            width: 300px;
+            height: 45px;
+            
+        }
+        .sign {
+            cursor: pointer;
+            background-color: #007bff;;
+            color: white;
+            border-color: #007bff;;
+            border-radius: 3px;
+            
+            font-size: large;
+            padding: 5px;
+            
+        }
+        .email{
+            color:gray;
+            border: 1px solid rgb(217, 211, 211);
+            font-size:medium;
+        }
+        .password{
+            color:gray;
+            border: 1px solid rgb(217, 211, 211);
+            border-top: none;
+            font-size:medium;
+        }
+        .checkbox{
+            margin: 5px;
+            padding: 5px;
+        }
+        .years{
+            margin: 50px;
+            color: gray;
         }
     </style>
 </head>
 <body id="center">
-    <form action="">
-        <img src="C:\Users\박민준\Desktop\Coding\PP1_Project2\example\bootstrap-solid.svg" alt width="80" height="80">
+    <form class="idform" action="">
+        <img src="./bootstrap-solid.svg" alt width="80" height="80">
+        <h1>Please sign in</h1>
+        <label>
+        <input type="email" class="email" placeholder=" Email address">
+        </label>
+        <br>
+        <label>
+        <input type="password" class="password" placeholder=" Password">
+        </label>
+        <br>
+        <div class="checkbox">
+            <input type="checkbox"> 
+            <label for="Rememberme">Remember me</label>
+        </div>
+        <br>
+        <button type="submit" class="sign">Sign in</button>
+        <p class="years">© 2017-2022</p>
+
+
     </form>
 </body>
 </html>
